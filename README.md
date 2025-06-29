@@ -8,7 +8,6 @@ This is a Django-based web application built using the Northwind sample database
 - `northwind/` – Main project folder with settings and URLs.
 - `templates/` – HTML templates for rendering views.
 - `static/` – Static files (CSS, JS, etc.).
-- `db.sqlite3` – Default SQLite database used for local development.
 
 ## 💡 Features
 
