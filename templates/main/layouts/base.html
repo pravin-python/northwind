@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>{% block title %}{% endblock title %} | Django Gradient Able </title>
+    <link rel="canonical" href="https://app-generator.dev/product/gradient-able/django/" />
+
+{% include 'main/includes/head.html' %}
+{% block extrastyle %}{% endblock extrastyle %}
+</head>
+<body>
+    {% block pre_loader %}
+        {% include 'main/includes/pre-loader.html' %}
+    {% endblock pre_loader %}
+
+    {% block sidebar %}
+        {% include 'main/includes/sidebar.html' %}
+    {% endblock sidebar %}
+
+    {% block navigation %}
+        {% include 'main/includes/navigation.html' %}
+    {% endblock navigation %}
+
+    <!-- [ Main Content ] start -->
+    <section class="pcoded-main-container">
+        <div class="pcoded-content">
+            {% comment %} {% block breadcrumbs %}
+                {% include 'main/includes/breadcrumbs.html' %}
+            {% endblock breadcrumbs %} {% endcomment %}
+
+            {% block content %}{% endblock content %}
+        </div>
+    </section>
+
+    {% include 'main/includes/scripts.html' %}
+    {% block extrajs %}{% endblock extrajs %}
+</body>
+</html>
